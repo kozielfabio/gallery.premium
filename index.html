@@ -7,110 +7,163 @@
 
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body {background:#0f1115;color:#fff;font-family:Poppins}
+body {
+    background:#0f1115;
+    color:#fff;
+    font-family:Poppins;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #FDE047, #CA8A04);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-gold {
+    background: linear-gradient(135deg, #CA8A04, #FACC15);
+    transition: .3s;
+}
+.btn-gold:hover {
+    transform: scale(1.05);
+}
+
+.float-whatsapp {
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+}
 </style>
 </head>
 
 <body>
 
 <!-- HERO -->
-<section class="text-center p-10">
-<h1 class="text-4xl font-bold mb-4">Transforme suas selfies em um Ensaio Profissional</h1>
-<p class="mb-6">Fotos perfeitas usando Inteligência Artificial</p>
-<img src="src/images/6.jfif" class="mx-auto rounded-xl w-80">
+<section class="text-center py-20 px-6">
+<h1 class="text-4xl md:text-6xl font-bold mb-6">
+Transforme suas selfies em um <span class="text-gradient">Ensaio Profissional</span>
+</h1>
+
+<p class="text-gray-300 mb-8 text-lg">
+Fotos perfeitas usando Inteligência Artificial
+</p>
+
+<img src="src/images/6.jfif" class="mx-auto rounded-2xl shadow-xl w-[350px]">
+
+<a href="https://wa.me/5542998720979?text=Ola%2C%20tenho%20interesse"
+class="btn-gold inline-block mt-8 px-8 py-4 rounded-full font-bold text-black">
+QUERO MINHAS FOTOS
+</a>
 </section>
 
 <!-- SERVIÇOS -->
-<section class="p-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+<section class="py-20 px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
 
-<div>
-<img src="src/images/1.jfif">
-<h2>Ensaio Gestante</h2>
-<p>Guarde a lembrança mais linda da sua vida com vestidos e cenários de luxo.</p>
+<div class="bg-gray-900 p-4 rounded-xl border border-gray-800 hover:border-yellow-500 transition">
+<img src="src/images/1.jfif" class="rounded mb-4">
+<h2 class="text-xl font-bold text-yellow-400">Ensaio Gestante</h2>
+<p class="text-gray-300">Guarde a lembrança mais linda da sua vida com vestidos e cenários de luxo.</p>
 </div>
 
-<div>
-<img src="src/images/2.jfif">
-<h2>Ensaio de Casal</h2>
-<p>Fotos românticas e perfeitas ao lado de quem você ama.</p>
+<div class="bg-gray-900 p-4 rounded-xl border border-gray-800 hover:border-yellow-500 transition">
+<img src="src/images/2.jfif" class="rounded mb-4">
+<h2 class="text-xl font-bold text-yellow-400">Ensaio de Casal</h2>
+<p class="text-gray-300">Fotos românticas e perfeitas ao lado de quem você ama.</p>
 </div>
 
-<div>
-<img src="src/images/3.jfif">
-<h2>Aniversário (20, 30, 40 anos)</h2>
-<p>Comemore com glamour, balões e cenários festivos incríveis.</p>
+<div class="bg-gray-900 p-4 rounded-xl border border-gray-800 hover:border-yellow-500 transition">
+<img src="src/images/3.jfif" class="rounded mb-4">
+<h2 class="text-xl font-bold text-yellow-400">Aniversário (20, 30, 40 anos)</h2>
+<p class="text-gray-300">Comemore com glamour e cenários incríveis.</p>
 </div>
 
-<div>
-<img src="src/images/4.jfif">
-<h2>Formatura e Profissional</h2>
-<p>Fotos com a família e a beca, ou fotos corporativas para seu perfil.</p>
+<div class="bg-gray-900 p-4 rounded-xl border border-gray-800 hover:border-yellow-500 transition">
+<img src="src/images/4.jfif" class="rounded mb-4">
+<h2 class="text-xl font-bold text-yellow-400">Formatura</h2>
+<p class="text-gray-300">Fotos com a família ou perfil profissional.</p>
 </div>
 
-<div>
-<img src="src/images/5.jfif">
-<h2>Mãe e filho, Cabelo & Tatuagem</h2>
-<p>Veja como você ficaria de cabelo curto ou com aquela tattoo antes de fazer!</p>
+<div class="bg-gray-900 p-4 rounded-xl border border-gray-800 hover:border-yellow-500 transition">
+<img src="src/images/5.jfif" class="rounded mb-4">
+<h2 class="text-xl font-bold text-yellow-400">Simulações</h2>
+<p class="text-gray-300">Teste cabelo ou tatuagem antes de fazer.</p>
 </div>
 
-<div>
-<img src="src/images/7.jfif">
-<h2>Restauração de Fotos</h2>
-<p>Trazemos fotos antigas à vida ou fazemos ensaios lindos das suas crianças.</p>
+<div class="bg-gray-900 p-4 rounded-xl border border-gray-800 hover:border-yellow-500 transition">
+<img src="src/images/7.jfif" class="rounded mb-4">
+<h2 class="text-xl font-bold text-yellow-400">Restauração</h2>
+<p class="text-gray-300">Fotos antigas restauradas com IA.</p>
 </div>
 
 </section>
 
 <!-- COMO FUNCIONA -->
-<section class="p-10 text-center">
-<h2 class="text-3xl mb-6">Como Funciona a Mágica?</h2>
+<section class="py-20 text-center px-6">
+<h2 class="text-4xl font-bold mb-10">Como Funciona?</h2>
 
-<p><strong>1. Envie suas Fotos</strong><br>
-Você nos envia de 5 a 10 selfies simples pelo WhatsApp.</p>
+<div class="grid md:grid-cols-3 gap-6">
 
-<p class="mt-4"><strong>2. Nossa IA Trabalha</strong><br>
-Criamos cenário, roupa e detalhes com perfeição.</p>
+<div class="bg-gray-900 p-6 rounded-xl">
+<h3 class="font-bold mb-2">1. Envie suas Fotos</h3>
+<p class="text-gray-400">Envie 5 a 10 selfies simples.</p>
+</div>
 
-<p class="mt-4"><strong>3. Receba a Arte</strong><br>
-Fotos prontas para postar e impressionar.</p>
+<div class="bg-gray-900 p-6 rounded-xl">
+<h3 class="font-bold mb-2">2. IA Trabalha</h3>
+<p class="text-gray-400">Criamos cenário e detalhes perfeitos.</p>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-xl">
+<h3 class="font-bold mb-2">3. Receba</h3>
+<p class="text-gray-400">Fotos prontas para postar.</p>
+</div>
+
+</div>
 </section>
 
 <!-- PROMO -->
-<section class="p-10 text-center">
-<h2 class="text-3xl mb-4">Promoção Relâmpago</h2>
+<section class="py-20 text-center px-6 bg-black">
 
-<p class="line-through">R$ 49,90</p>
-<p class="text-4xl font-bold text-yellow-400">R$9,90</p>
+<h2 class="text-4xl font-bold mb-6">Promoção Relâmpago</h2>
 
-<p class="mt-4">
-Leve 2 FOTOS EXCLUSIVAS por apenas nove e noventa.
+<p class="line-through text-gray-500">R$ 49,90</p>
+<p class="text-6xl font-bold text-yellow-400">R$9,90</p>
+
+<p class="mt-6 text-gray-300">
+Leve 2 FOTOS EXCLUSIVAS por apenas R$9,90
 </p>
 
-<ul class="mt-6">
+<ul class="mt-8 space-y-2">
 <li>✔ Qualidade Ultra HD</li>
 <li>✔ Entrega via WhatsApp</li>
-<li>✔ Você escolhe o tema</li>
-<li>✔ Garantia de satisfação</li>
+<li>✔ Escolha o tema</li>
+<li>✔ Garantia</li>
 </ul>
 
-<a href="https://wa.me/5542998720979?text=Ola%2C%20tenho%20interesse%20no%20ensaio%20com%20I.A" class="block mt-6 bg-green-500 p-4 rounded">
-FALAR COM UM ATENDENTE
+<a href="https://wa.me/5542998720979?text=Ola%2C%20tenho%20interesse"
+class="btn-gold inline-block mt-8 px-10 py-5 rounded-full font-bold text-black">
+FALAR COM ATENDENTE
 </a>
 
-<p class="mt-4">Vagas limitadas para essa promoção. Garanta já a sua!</p>
+<p class="mt-4 text-gray-400">Vagas limitadas</p>
+
 </section>
 
 <!-- FOOTER -->
-<footer class="text-center p-6 text-gray-400">
-<p>GalleryPremium</p>
-<p>© 2024 GalleryPremium. Todos os direitos reservados.</p>
-<p class="text-xs mt-2">
-Avisos legais: As imagens criadas são simulações digitais geradas por IA.
-</p>
+<footer class="text-center p-6 text-gray-500">
+<p>Thaaygallery</p>
+<p>© 2024 Todos direitos reservados</p>
 </footer>
+
+<!-- BOTÃO FLUTUANTE -->
+<a href="https://wa.me/5542998720979?text=Ola%2C%20tenho%20interesse"
+class="float-whatsapp fixed bottom-6 right-6 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-white text-3xl shadow-lg">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
