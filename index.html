@@ -1,169 +1,125 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ensaios Fotográficos com IA | Promoção</title>
-
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-body {
-    background:#0f1115;
-    color:#fff;
-    font-family:Poppins;
-}
-
-.text-gradient {
-    background: linear-gradient(to right, #FDE047, #CA8A04);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.btn-gold {
-    background: linear-gradient(135deg, #CA8A04, #FACC15);
-    transition: .3s;
-}
-.btn-gold:hover {
-    transform: scale(1.05);
-}
-
-.float-whatsapp {
-    animation: bounce 2s infinite;
-}
-@keyframes bounce {
-    0%,100%{transform:translateY(0);}
-    50%{transform:translateY(-10px);}
-}
-</style>
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensaios Fotográficos com IA | Promoção</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome para Ícones -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            300: '#FDE047',
+                            400: '#FACC15',
+                            500: '#EAB308',
+                            600: '#CA8A04',
+                            700: '#A16207',
+                        },
+                        dark: '#121212'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f1115;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #FDE047, #CA8A04, #FDE047);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: shine 3s linear infinite;
+        }
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+        .btn-gold {
+            background: linear-gradient(135deg, #CA8A04 0%, #FACC15 50%, #CA8A04 100%);
+            background-size: 200% auto;
+            transition: 0.5s;
+        }
+        .btn-gold:hover {
+            background-position: right center;
+            transform: scale(1.05);
+        }
+        .float-whatsapp {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-20px);}
+            60% {transform: translateY(-10px);}
+        }
+    </style>
 </head>
+<body class="antialiased">
 
-<body>
+<header class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <i class="fa-solid fa-camera-retro text-gold-400 text-2xl"></i>
+            <span class="font-serif text-xl font-bold tracking-wider text-white">Gallery<span class="text-gold-400">Premium</span></span>
+        </div>
+        <a href="#promocao" class="hidden md:inline-block border border-gold-500 text-gold-400 px-4 py-2 rounded-full font-medium hover:bg-gold-500 hover:text-dark transition">
+            Ver Promoção
+        </a>
+    </div>
+</header>
 
-<!-- HERO -->
-<section class="text-center py-20 px-6">
-<h1 class="text-4xl md:text-6xl font-bold mb-6">
-Transforme suas selfies em um <span class="text-gradient">Ensaio Profissional</span>
-</h1>
+<section class="pt-32 pb-20 px-4 min-h-screen flex items-center relative overflow-hidden">
+    <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+        <div class="space-y-6">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight">
+                Transforme suas selfies em um <span class="text-gradient">Ensaio Profissional</span>
+            </h1>
+            <div class="pt-4">
+                <a href="https://wa.me/5542998720979?text=Ola%2C%20tenho%20interesse%20no%20ensaio%20com%20I.A" target="_blank" class="btn-gold inline-flex items-center gap-3 text-dark font-bold text-lg px-8 py-4 rounded-full">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    QUERO SABER MAIS
+                </a>
+            </div>
+        </div>
 
-<p class="text-gray-300 mb-8 text-lg">
-Fotos perfeitas usando Inteligência Artificial
-</p>
-
-<img src="src/images/6.jfif" class="mx-auto rounded-2xl shadow-xl w-[350px]">
-
-<a href="https://wa.me/5542998720979?text=Ola%2C%20tenho%20interesse"
-class="btn-gold inline-block mt-8 px-8 py-4 rounded-full font-bold text-black">
-QUERO MINHAS FOTOS
-</a>
+        <div class="relative">
+            <img src="6.jfif" class="rounded-2xl">
+        </div>
+    </div>
 </section>
 
-<!-- SERVIÇOS -->
-<section class="py-20 px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
-
-<div class="bg-gray-900 p-4 rounded-xl border border-gray-800 hover:border-yellow-500 transition">
-<img src="src/images/1.jfif" class="rounded mb-4">
-<h2 class="text-xl font-bold text-yellow-400">Ensaio Gestante</h2>
-<p class="text-gray-300">Guarde a lembrança mais linda da sua vida com vestidos e cenários de luxo.</p>
-</div>
-
-<div class="bg-gray-900 p-4 rounded-xl border border-gray-800 hover:border-yellow-500 transition">
-<img src="src/images/2.jfif" class="rounded mb-4">
-<h2 class="text-xl font-bold text-yellow-400">Ensaio de Casal</h2>
-<p class="text-gray-300">Fotos românticas e perfeitas ao lado de quem você ama.</p>
-</div>
-
-<div class="bg-gray-900 p-4 rounded-xl border border-gray-800 hover:border-yellow-500 transition">
-<img src="src/images/3.jfif" class="rounded mb-4">
-<h2 class="text-xl font-bold text-yellow-400">Aniversário (20, 30, 40 anos)</h2>
-<p class="text-gray-300">Comemore com glamour e cenários incríveis.</p>
-</div>
-
-<div class="bg-gray-900 p-4 rounded-xl border border-gray-800 hover:border-yellow-500 transition">
-<img src="src/images/4.jfif" class="rounded mb-4">
-<h2 class="text-xl font-bold text-yellow-400">Formatura</h2>
-<p class="text-gray-300">Fotos com a família ou perfil profissional.</p>
-</div>
-
-<div class="bg-gray-900 p-4 rounded-xl border border-gray-800 hover:border-yellow-500 transition">
-<img src="src/images/5.jfif" class="rounded mb-4">
-<h2 class="text-xl font-bold text-yellow-400">Simulações</h2>
-<p class="text-gray-300">Teste cabelo ou tatuagem antes de fazer.</p>
-</div>
-
-<div class="bg-gray-900 p-4 rounded-xl border border-gray-800 hover:border-yellow-500 transition">
-<img src="src/images/7.jfif" class="rounded mb-4">
-<h2 class="text-xl font-bold text-yellow-400">Restauração</h2>
-<p class="text-gray-300">Fotos antigas restauradas com IA.</p>
-</div>
-
+<section class="py-20 bg-dark border-t border-gray-800">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <img src="src/images/1.jfif">
+        <img src="src/images/2.jfif">
+        <img src="src/images/3.jfif">
+        <img src="src/images/4.jfif">
+        <img src="src/images/5.jfif">
+        <img src="src/images/7.jfif">
+    </div>
 </section>
 
-<!-- COMO FUNCIONA -->
-<section class="py-20 text-center px-6">
-<h2 class="text-4xl font-bold mb-10">Como Funciona?</h2>
-
-<div class="grid md:grid-cols-3 gap-6">
-
-<div class="bg-gray-900 p-6 rounded-xl">
-<h3 class="font-bold mb-2">1. Envie suas Fotos</h3>
-<p class="text-gray-400">Envie 5 a 10 selfies simples.</p>
-</div>
-
-<div class="bg-gray-900 p-6 rounded-xl">
-<h3 class="font-bold mb-2">2. IA Trabalha</h3>
-<p class="text-gray-400">Criamos cenário e detalhes perfeitos.</p>
-</div>
-
-<div class="bg-gray-900 p-6 rounded-xl">
-<h3 class="font-bold mb-2">3. Receba</h3>
-<p class="text-gray-400">Fotos prontas para postar.</p>
-</div>
-
-</div>
-</section>
-
-<!-- PROMO -->
-<section class="py-20 text-center px-6 bg-black">
-
-<h2 class="text-4xl font-bold mb-6">Promoção Relâmpago</h2>
-
-<p class="line-through text-gray-500">R$ 49,90</p>
-<p class="text-6xl font-bold text-yellow-400">R$9,90</p>
-
-<p class="mt-6 text-gray-300">
-Leve 2 FOTOS EXCLUSIVAS por apenas R$9,90
-</p>
-
-<ul class="mt-8 space-y-2">
-<li>✔ Qualidade Ultra HD</li>
-<li>✔ Entrega via WhatsApp</li>
-<li>✔ Escolha o tema</li>
-<li>✔ Garantia</li>
-</ul>
-
-<a href="https://wa.me/5542998720979?text=Ola%2C%20tenho%20interesse"
-class="btn-gold inline-block mt-8 px-10 py-5 rounded-full font-bold text-black">
-FALAR COM ATENDENTE
-</a>
-
-<p class="mt-4 text-gray-400">Vagas limitadas</p>
-
-</section>
-
-<!-- FOOTER -->
-<footer class="text-center p-6 text-gray-500">
-<p>Thaaygallery</p>
-<p>© 2024 Todos direitos reservados</p>
+<footer class="bg-black py-8 border-t border-gray-900 text-center text-gray-500 text-sm">
+    <span class="font-serif text-lg font-bold text-gray-400">Gallery<span class="text-gold-600">Premium</span></span>
+    <p>© 2024 GalleryPremium. Todos os direitos reservados.</p>
 </footer>
 
-<!-- BOTÃO FLUTUANTE -->
-<a href="https://wa.me/5542998720979?text=Ola%2C%20tenho%20interesse"
-class="float-whatsapp fixed bottom-6 right-6 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-white text-3xl shadow-lg">
-<i class="fa-brands fa-whatsapp"></i>
+<a href="https://wa.me/5542998720979?text=Ola%2C%20tenho%20interesse%20no%20ensaio%20com%20I.A" target="_blank" class="float-whatsapp fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl">
+    <i class="fa-brands fa-whatsapp"></i>
 </a>
 
-</body>
-</html>
+</body></html>
